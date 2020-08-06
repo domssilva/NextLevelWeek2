@@ -24,3 +24,6 @@ yarn-error.log*
 
 # assets
 *.zip
+
+# VS code rest client files
+*.http
