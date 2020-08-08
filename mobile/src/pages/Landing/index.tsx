@@ -34,7 +34,7 @@ const Landing:React.FC = () => {
 
     return (
         <View style={styles.container}>
-            <Image source={landingImg}/>
+            <Image style={styles.banner} source={landingImg}/>
             <Text style={styles.title}>
                 Welcome, {'\n'}
             </Text>
