@@ -43,7 +43,7 @@ export default function createFakeUser(): User {
         name: `${faker.name.firstName()} ${faker.name.lastName()}`,
         avatar: faker.image.people(),
         whatsapp: faker.phone.phoneNumber(),
-        bio: faker.lorem.paragraph(),
+        bio: faker.lorem.words(15),
         subject: getRandomSubject(),
         cost: getRandomNumber(20, 200),
         schedule: [
