@@ -12,4 +12,6 @@ routes.post('/classes', classesControllers.create);
 routes.get('/connections', connectionsController.index);
 routes.post('/connections', connectionsController.create);
 
+// ExtraMile3: teacher route
+
 export default routes;
