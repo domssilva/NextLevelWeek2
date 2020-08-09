@@ -2,33 +2,15 @@ import Knex from 'knex';
 
 import db from '../connection';
 import convertHourToMinutes from '../../utils/convertHourToMinutes';
-
-let user = {
-    name: "Domenique Silva",
-    avatar: "https://github.com/domssilva.png",
-    whatsapp: "35235973925",
-    bio: "Physics is awesome!",
-    subject: "physics",
-    cost: 120,
-    schedule: [
-        {
-            week_day:"6",
-            from:"10:00",
-            to:"13:00"
-        }
-    ]
-};
-
-interface ScheduleItem {
-    week_day: number;
-    from: string;
-    to: string;
-}
+import createFakeUser, {ScheduleItem} from '../../utils/createFakeUser';
 
 export async function seed(knex: Knex) {
-
-    // 1. connect to db
+    
+    // 0. connect to db
     const trx = await db.transaction();
+
+    // 1. create fake user
+    let user = createFakeUser();
 
     //2. insert user 
     const insertedUsersIds = await trx('users').insert({
