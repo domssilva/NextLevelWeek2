@@ -17,7 +17,8 @@ As a challenge, these are the features I implemented by myself to extend the ori
 | --------------------------------------------------------------------------- | ---------- |
 |  (Backend):  Create DB Seed with Knex                                       | [eecd...](https://github.com/domssilva/NextLevelWeek2/commit/eecd9991581f6ffa4d210844a11976050cdeae28#diff-469bba0a564235dfceede42db14f17b0) |
 |  (Backend):  Create utility with Faker to generate teachers                 | [a5c2...](https://github.com/domssilva/NextLevelWeek2/commit/a5c25399b102df904868c2a64be27f37badbb1a9#diff-469bba0a564235dfceede42db14f17b0) - [3571...](https://github.com/domssilva/NextLevelWeek2/commit/35717238936f692318f4f3f639a8025c83b35109) |
-|  (Backend):  Create new route to fetch a specific teacher's data            | []() |
+|  (Backend):  Create new route to fetch all registered teachers              | [880c...](https://github.com/domssilva/NextLevelWeek2/commit/880c03c219310790afc4c6d39f81c82a22dd409c) |
+|  (Backend):  Create index route to document API                             | [5e84...](https://github.com/domssilva/NextLevelWeek2/commit/5e84559c8382cd54c9b4b87cb3c8a8b0c05b797a) |
 |  (Frontend): Create a profile page where you can learn more about a teacher | []() |
 
 
