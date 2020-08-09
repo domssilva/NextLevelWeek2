@@ -1,0 +1,28 @@
+.allteachers {
+    margin: 4rem 2rem;
+    padding: 0 5rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.allteachers .teacher-item {
+    height: 280px;
+    width: 95%;
+    margin: auto;
+}
+
+@media (max-width: 900px) {
+    .allteachers {
+        padding: 0;
+        grid-gap: 1rem;
+        margin: 2rem 0.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 700px) {
+    .allteachers {
+        margin: 0.5rem;
+        grid-template-columns: 1fr;
+    }
+}

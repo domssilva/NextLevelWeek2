@@ -16,9 +16,11 @@ export interface Teacher {
 
 interface TeacherItemProps {
     teacher: Teacher,
+    info?: Boolean,
 }
 
-const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, info }) => {
+
     return (
         <article className="teacher-item">
             <header>
@@ -33,16 +35,20 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
                 {teacher.bio}
             </p>
 
-            <footer>
-                <p>
-                    Price/hour
-                    <strong>{teacher.cost}</strong>
-                </p>
-                <a href={`https://wa.me/${teacher.whatsapp}`} target="_blank">
-                    <img src={whatsappIcon} alt="whatsapp"/>
-                    Get in touch
-                </a>
-            </footer>
+            {
+                info && (
+                    <footer>
+                        <p>
+                            Price/hour
+                            <strong>{teacher.cost}</strong>
+                        </p>
+                        <a href={`https://wa.me/${teacher.whatsapp}`} target="_blank">
+                            <img src={whatsappIcon} alt="whatsapp"/>
+                            Get in touch
+                        </a>
+                    </footer>
+                )
+            }
         </article>
     )
 }

@@ -1,6 +1,8 @@
 import React, {useState, FormEvent} from 'react';
+import { Link } from 'react-router-dom';
 
 import api from '../../services/api';
+
 import Input from '../../components/Input';
 import Select from '../../components/Select';
 import PageHader from '../../components/PageHeader';
@@ -81,6 +83,10 @@ const TeacherList = () => {
                 {
                     classes.map((teacher: Teacher) => <TeacherItem key={teacher.id} teacher={teacher}/>)
                 }
+
+                <Link className="btn" to="teachers">
+                    see all teachers
+                </Link>
             </main>
         </div>
     )
