@@ -27,7 +27,7 @@ const AllTeachers: React.FC = () => {
 
             <div className="allteachers">
                 {
-                    teachers.map(teacher => <TeacherItem teacher={teacher}/>)
+                    teachers.map(teacher => <TeacherItem teacher={teacher} key={teacher.id}/>)
                 }
             </div>
         </div>

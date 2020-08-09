@@ -5,7 +5,7 @@
   </a>
 </p>
 <p align="center">
-    <img src="./layout.png" alt="project banner">
+    <img src="./ReadmeAssets/layout.png" alt="project banner">
 </p>
 
 Proffy is an online educational platform to connect teachers and students, allowing them to schedule lessons according to the selected time and price.
@@ -19,8 +19,19 @@ As a challenge, these are the features I implemented by myself to extend the ori
 |  (Backend):  Create utility with Faker to generate teachers                 | [a5c2...](https://github.com/domssilva/NextLevelWeek2/commit/a5c25399b102df904868c2a64be27f37badbb1a9#diff-469bba0a564235dfceede42db14f17b0) - [3571...](https://github.com/domssilva/NextLevelWeek2/commit/35717238936f692318f4f3f639a8025c83b35109) |
 |  (Backend):  Create new route to fetch all registered teachers              | [880c...](https://github.com/domssilva/NextLevelWeek2/commit/880c03c219310790afc4c6d39f81c82a22dd409c) |
 |  (Backend):  Create index route to document API                             | [5e84...](https://github.com/domssilva/NextLevelWeek2/commit/5e84559c8382cd54c9b4b87cb3c8a8b0c05b797a) |
-|  (Frontend): Create a profile page where you can learn more about a teacher | []() |
+|  (Frontend): Create a profile page where you can verify all registered proffys| [5f8e...](https://github.com/domssilva/NextLevelWeek2/commit/5f8e92477dbb1b8a91060ae18b21df7606ff5f2f) |
 
+
+#### New Routes:
+
+##### API Documentation
+<img src="./ReadmeAssets/apidocs.png" alt="project banner">
+
+##### /teachers
+<img src="./ReadmeAssets/teachers_route.png" alt="project banner">
+
+#### New Page to see all registered Proffys (teachers):
+<img src="./ReadmeAssets/fenewpage.png" alt="project banner">
 
 # Technical Overview
 
